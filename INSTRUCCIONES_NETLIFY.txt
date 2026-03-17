@@ -1,0 +1,175 @@
+═══════════════════════════════════════════════════════════════════════════════
+  📧 ECOSCOOTING - PLANTILLAS DE EMAIL INTERACTIVAS
+  Guía de Despliegue en Netlify
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ ARCHIVOS LISTOS PARA DESPLEGAR:
+
+📁 proyecto-netlify/
+  ├── 📄 index.html          ← ARCHIVO PRINCIPAL (todo incluido)
+  ├── 📄 README.md           ← Documentación
+  ├── 📄 netlify.toml        ← Configuración Netlify
+  ├── 📄 plantillas.json     ← Base de datos (respaldo)
+  └── 📄 .gitignore          ← Archivos a ignorar
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 OPCIÓN 1: DESPLIEGUE RÁPIDO (ARRASTRA Y SUELTA)
+   ⏱️  Tiempo: 2 minutos
+   📌 Mejor para: Prueba rápida
+
+1. Ve a: https://netlify.com/drop
+2. Arrastra la carpeta "proyecto-netlify" o selecciona todos los archivos
+3. ¡Listo! Tu sitio estará en vivo en segundos
+4. Recibirás una URL como: https://xxx-yyy-zzz.netlify.app
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔗 OPCIÓN 2: DESPLIEGUE CON GITHUB (RECOMENDADO)
+   ⏱️  Tiempo: 5 minutos
+   📌 Mejor para: Mantenimiento continuo
+
+PASO 1: Crear repositorio en GitHub
+   1. Ve a GitHub.com
+   2. Haz login
+   3. Click en "+" → "New repository"
+   4. Nombre: "ecoscooting-plantillas"
+   5. Descripción: "Plantillas de email interactivas"
+   6. Selecciona "Public"
+   7. Click en "Create repository"
+
+PASO 2: Subir archivos
+   Opción A - En la web:
+   1. Click en "uploading an existing file"
+   2. Selecciona todos los archivos (index.html, README.md, etc)
+   3. Haz commit
+   
+   Opción B - Desde terminal:
+   cd proyecto-netlify
+   git init
+   git add .
+   git commit -m "Initial commit: Plantillas interactivas"
+   git branch -M main
+   git remote add origin https://github.com/TU_USUARIO/ecoscooting-plantillas.git
+   git push -u origin main
+
+PASO 3: Conectar con Netlify
+   1. Ve a https://app.netlify.com
+   2. Haz login con GitHub
+   3. Click en "New site from Git"
+   4. Autoriza Netlify
+   5. Selecciona el repositorio "ecoscooting-plantillas"
+   6. Selecciona rama: main
+   7. Build settings (dejar por defecto):
+      - Build command: (dejar vacío)
+      - Publish directory: . (punto)
+   8. Click en "Deploy site"
+   9. ¡Listo! Tu sitio estará en vivo en ~1 minuto
+
+Tu URL será: https://ecoscooting-plantillas.netlify.app (se puede cambiar)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚙️ OPCIÓN 3: DESPLIEGUE CON CLI (Para desarrolladores)
+
+npm install -g netlify-cli
+netlify login
+netlify init
+  → Selecciona "Create and authorize a new site"
+  → Elige equipo
+  → Nombre: ecoscooting-plantillas
+  → Build command: (dejar vacío)
+  → Publish: . (punto)
+netlify deploy --prod
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 DESPUÉS DEL DESPLIEGUE:
+
+✅ Verificar que funciona:
+   1. Abre tu URL en el navegador
+   2. Prueba buscar "falsa entrega"
+   3. Prueba copiar una plantilla
+   4. Prueba filtrar por categoría
+
+📋 Compartir con el equipo:
+   - Envía la URL a tu equipo
+   - No necesitan credenciales
+   - Funciona en todos los navegadores
+   - Funciona offline una vez cargado
+
+🔄 Actualizar plantillas:
+   1. Edita index.html
+   2. Busca el array "plantillas"
+   3. Agrega/modifica plantillas
+   4. Guarda el archivo
+   5. Si usas GitHub, haz git push
+   6. Netlify autodeploy (se actualiza automáticamente)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🌐 CARACTERÍSTICAS EN VIVO:
+
+✅ Búsqueda instantánea
+✅ Filtros por categoría
+✅ Filtros por tag (CSOP/COSP)
+✅ Copiar al portapapeles
+✅ Ver plantilla completa
+✅ Responsive (móvil, tablet, desktop)
+✅ Cero costo (plan gratuito Netlify)
+✅ HTTPS automático
+✅ Dominio personalizado (opcional)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 TIPS IMPORTANTES:
+
+1. El archivo index.html contiene TODA la aplicación
+   - No necesitas servidor
+   - No necesitas base de datos
+   - Todo funciona con HTML + CSS + JavaScript
+
+2. Para cambiar el dominio:
+   - Netlify dashboard → Site settings → Domain settings
+   - Puedes usar un dominio propio
+
+3. Para agregar protección con contraseña:
+   - Netlify dashboard → Site settings → Access control
+
+4. Los visitantes no necesitan cuenta ni login
+   - Simplemente comparten la URL
+
+5. Compatible con navegadores:
+   - Chrome ✅
+   - Firefox ✅
+   - Safari ✅
+   - Edge ✅
+
+═══════════════════════════════════════════════════════════════════════════════
+
+❓ SOLUCIÓN DE PROBLEMAS:
+
+Problema: Página en blanco
+Solución: Abre la consola (F12) → busca errores
+
+Problema: Netlify no reconoce los archivos
+Solución: Asegúrate de hacer push a main (no master)
+
+Problema: Las plantillas no cargan
+Solución: Recarga la página (Ctrl+F5)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 SOPORTE:
+
+Documentación: README.md (en la carpeta)
+Netlify Help: https://docs.netlify.com
+GitHub Help: https://docs.github.com
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎉 ¡LISTO! Tu aplicación de plantillas está lista para ir en vivo.
+
+Elige la opción que prefieras y en pocos minutos tendrás tu sitio activo.
+
+═══════════════════════════════════════════════════════════════════════════════
