@@ -6,7 +6,7 @@
     <title>Ecoscooting - Plantillas de Email</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -36,7 +36,6 @@
         .dropdown-content.active { display: block; }
         .dropdown-content button { display: block; width: 100%; text-align: left; padding: 10px 0; border: none; background: none; cursor: pointer; color: #1f2937; font-size: 14px; transition: color 0.2s; }
         .dropdown-content button:hover { color: #667eea; }
-        #pdfContent { position: absolute; left: -9999px; width: 210mm; }
     </style>
 </head>
 <body>
@@ -57,13 +56,13 @@
                             <i class="fas fa-download"></i> Descargar
                         </button>
                         <div id="downloadMenu" class="dropdown-content">
-                            <button onclick="downloadExcel()">
-                                <i class="fas fa-file-excel" style="color: #10b981; margin-right: 8px;"></i>
+                            <button onclick="downloadExcel()" style="color: #10b981;">
+                                <i class="fas fa-file-excel" style="margin-right: 8px;"></i>
                                 <strong>Descargar EXCEL</strong><br>
                                 <span style="font-size: 12px; color: #6b7280;">Con sheets por categoría</span>
                             </button>
-                            <button onclick="downloadPDF()" style="margin-top: 12px; border-top: 1px solid #e5e7eb; padding-top: 12px;">
-                                <i class="fas fa-file-pdf" style="color: #f5576c; margin-right: 8px;"></i>
+                            <button onclick="downloadPDF()" style="margin-top: 12px; border-top: 1px solid #e5e7eb; padding-top: 12px; color: #f5576c;">
+                                <i class="fas fa-file-pdf" style="margin-right: 8px;"></i>
                                 <strong>Descargar PDF</strong><br>
                                 <span style="font-size: 12px; color: #6b7280;">Formato profesional</span>
                             </button>
@@ -107,8 +106,6 @@
             </button>
         </div>
     </div>
-
-    <div id="pdfContent"></div>
 
     <script>
         const plantillasData = [
@@ -473,29 +470,40 @@
 
         function downloadExcel() {
             try {
+                if (typeof XLSX === 'undefined') {
+                    alert('Error: Librería XLSX no cargada. Recarga la página.');
+                    return;
+                }
+
                 const wb = XLSX.utils.book_new();
 
                 categories.forEach(cat => {
                     const plantillasDeCategoria = plantillas.filter(p => p.categoria === cat);
                     
-                    const data = [['Nombre', 'Tag', 'Contenido']];
+                    const wsData = [];
+                    wsData.push(['Nombre', 'Tag', 'Contenido']);
+                    
                     plantillasDeCategoria.forEach(p => {
-                        data.push([p.nombre, p.tag, p.contenido]);
+                        wsData.push([p.nombre || '', p.tag || '', p.contenido || '']);
                     });
 
-                    const ws = XLSX.utils.aoa_to_sheet(data);
+                    const ws = XLSX.utils.aoa_to_sheet(wsData);
                     
-                    ws['!cols'] = [{wch: 25}, {wch: 12}, {wch: 60}];
-                    ws['!rows'] = [{hpx: 30}];
+                    ws['!cols'] = [
+                        {wch: 30},
+                        {wch: 12},
+                        {wch: 80}
+                    ];
 
                     XLSX.utils.book_append_sheet(wb, ws, cat.substring(0, 31));
                 });
 
                 XLSX.writeFile(wb, 'Plantillas_Ecoscooting.xlsx');
                 console.log('Excel descargado correctamente');
+                
             } catch (error) {
-                console.error('Error al descargar Excel:', error);
-                alert('Error al descargar Excel. Intenta nuevamente.');
+                console.error('Error completo:', error);
+                alert('Error al descargar Excel. Detalle: ' + error.message);
             }
             document.getElementById('downloadMenu').classList.remove('active');
         }
@@ -563,8 +571,9 @@ ${p.contenido}
 
                 html2pdf().set(opt).from(element).save();
                 console.log('PDF descargado correctamente');
+                
             } catch (error) {
-                console.error('Error al descargar PDF:', error);
+                console.error('Error al generar PDF:', error);
                 alert('Error al descargar PDF. Intenta nuevamente.');
             }
             document.getElementById('downloadMenu').classList.remove('active');
