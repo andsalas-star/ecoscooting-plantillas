@@ -36,6 +36,10 @@
             background: #fef3c7;
             color: #b45309;
         }
+        .badge-general {
+            background: #f3e8ff;
+            color: #7e22ce;
+        }
         .category-badge {
             display: inline-block;
             padding: 4px 12px;
@@ -127,7 +131,7 @@
                     <p class="text-gray-300">Acceso rápido a plantillas de email profesionales</p>
                 </div>
                 <div class="text-right">
-                    <div class="text-3xl font-bold" id="totalCount">47</div>
+                    <div class="text-3xl font-bold" id="totalCount">48</div>
                     <div class="text-sm text-gray-300">Plantillas disponibles</div>
                 </div>
             </div>
@@ -560,6 +564,14 @@
                 "nombre": "Consulta de AE",
                 "tag": "CSOP",
                 "contenido": "Estimado Xxxx, \n\nGracias por contactarnos.\nTras revisar su consulta, queremos informarle que el paquete al que hace referencia no forma parte de los envíos gestionados por Ecoscooting. Por este motivo, no podemos proporcionar información sobre su estado ni gestionar su entrega.\nLe recomendamos ponerse en contacto directamente con la empresa o plataforma donde realizó la compra, ya que ellos podrán proporcionarle toda la información y soporte necesario sobre su envío.\nQuedamos a su disposición para cualquier otra consulta relacionada con nuestros servicios.\nAtentamente,.\n\nEquipo de Atención al Cliente de Ecoscooting 📦"
+        },
+        {
+                "id": 48,
+                "categoria": "Otras Consultas",
+                "subcategoria": "Solicitud de empleo",
+                "nombre": "Solicitud de empleo",
+                "tag": "GENERAL",
+                "contenido": "Estimado XXXXXX,\n\nGracias por tu interés en trabajar con nosotros. Para ser parte de nuestro equipo de trabajo, debes ingresar a nuestra página web www.ecoscooting.com. En la parte superior encontrarás la opción \"Conviértete en DSP\". Haz clic allí y continúa siguiendo las indicaciones para completar y enviar el formulario correspondiente.\nUna vez enviado, el área encargada se pondrá en contacto contigo.\n\nAgradecemos mucho tu colaboración y, si no es mucha molestia, te invitamos a responder la encuesta de satisfacción que recibirás próximamente. Tu opinión es muy valiosa para seguir mejorando nuestra atención. 😊\n\nEquipo de Atención al Cliente de Ecoscooting 📦"
         }
 ];
 
@@ -597,6 +609,15 @@
             noResults.style.display = 'none';
             container.innerHTML = filteredPlantillas.map(p => {
                 const preview = p.contenido.replace(/\n/g, ' ').substring(0, 150) + '...';
+                let tagBadge = '';
+                if (p.tag === 'CSOP') {
+                    tagBadge = '<span class="category-badge badge-csop">CSOP</span>';
+                } else if (p.tag === 'COSP') {
+                    tagBadge = '<span class="category-badge badge-cosp">COSP</span>';
+                } else if (p.tag === 'GENERAL') {
+                    tagBadge = '<span class="category-badge badge-general">🌍 GENERAL</span>';
+                }
+                
                 return `
                 <div class="card-template bg-white rounded-lg shadow p-6" style="border-left-color: #${getColorForCategory(p.categoria)}">
                     <div class="flex justify-between items-start mb-4">
@@ -604,7 +625,7 @@
                             <h3 class="text-lg font-bold text-gray-900 mb-2">${escapeHtml(p.nombre)}</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span class="category-badge" style="background-color: #${getColorForCategory(p.categoria)}22; color: #${getColorForCategory(p.categoria)}">${escapeHtml(p.categoria)}</span>
-                                <span class="category-badge ${p.tag === 'CSOP' ? 'badge-csop' : 'badge-cosp'}">${p.tag}</span>
+                                ${tagBadge}
                             </div>
                         </div>
                     </div>

@@ -374,5 +374,13 @@
     "nombre": "Consulta de AE",
     "tag": "CSOP",
     "contenido": "Estimado Xxxx, \n\nGracias por contactarnos.\nTras revisar su consulta, queremos informarle que el paquete al que hace referencia no forma parte de los envíos gestionados por Ecoscooting. Por este motivo, no podemos proporcionar información sobre su estado ni gestionar su entrega.\nLe recomendamos ponerse en contacto directamente con la empresa o plataforma donde realizó la compra, ya que ellos podrán proporcionarle toda la información y soporte necesario sobre su envío.\nQuedamos a su disposición para cualquier otra consulta relacionada con nuestros servicios.\nAtentamente,.\n\nEquipo de Atención al Cliente de Ecoscooting 📦"
+  },
+  {
+    "id": 48,
+    "categoria": "Otras Consultas",
+    "subcategoria": "Solicitud de empleo",
+    "nombre": "Solicitud de empleo",
+    "tag": "GENERAL",
+    "contenido": "Estimado XXXXXX,\n\nGracias por tu interés en trabajar con nosotros. Para ser parte de nuestro equipo de trabajo, debes ingresar a nuestra página web www.ecoscooting.com. En la parte superior encontrarás la opción \"Conviértete en DSP\". Haz clic allí y continúa siguiendo las indicaciones para completar y enviar el formulario correspondiente.\nUna vez enviado, el área encargada se pondrá en contacto contigo.\n\nAgradecemos mucho tu colaboración y, si no es mucha molestia, te invitamos a responder la encuesta de satisfacción que recibirás próximamente. Tu opinión es muy valiosa para seguir mejorando nuestra atención. 😊\n\nEquipo de Atención al Cliente de Ecoscooting 📦"
   }
 ]
