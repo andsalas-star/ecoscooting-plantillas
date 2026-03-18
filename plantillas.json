@@ -2,383 +2,328 @@
   {
     "id": 1,
     "categoria": "Plazo de entrega",
-    "subcategoria": "A. Solicita reparto acelerado - sin incidencia.",
     "nombre": "Solicita reparto acelerado - sin incidencia",
     "tag": "CSOP",
-    "contenido": "Estimado XXXXXX ,\nán organizadas previamente, pero haremos lo posible por agilizar la gestión.\nPodrás seguir su trayecto y estado en nuestra web 🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEspero que tengas un excelente dia, \nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nEntendemos que necesita recibir su pedido con mayor urgencia y vamos a trasladar su solicitud al equipo de reparto para intentar priorizar la entrega dentro de lo posible.\nNo podemos garantizar un adelanto en la fecha prevista, ya que las rutas están organizadas previamente, pero haremos lo posible por agilizar la gestión.\nPodrás seguir su trayecto y estado en nuestra web 🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEspero que tengas un excelente dia, \nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 2,
     "categoria": "Plazo de entrega",
-    "subcategoria": "b. Solicita reparto acelerado - con incidencia.",
-    "nombre": " Estado logístico anormal",
+    "nombre": "Estado logístico anormal",
     "tag": "CSOP",
-    "contenido": "Estimado XXXXXX ,\nán organizadas previamente, pero haremos lo posible por agilizar la gestión.\nPodrás seguir su trayecto y estado en nuestra web 🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEspero que tengas un excelente dia, \nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nEntendemos que necesita recibir su pedido con mayor urgencia y vamos a trasladar su solicitud al equipo de reparto para intentar priorizar la entrega dentro de lo posible.\nNo podemos garantizar un adelanto en la fecha prevista, ya que las rutas están organizadas previamente, pero haremos lo posible por agilizar la gestión.\nPodrás seguir su trayecto y estado en nuestra web 🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEspero que tengas un excelente dia, \nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 3,
     "categoria": "Plazo de entrega",
-    "subcategoria": "b. Solicita reparto acelerado - con incidencia.",
     "nombre": "Solicita reparto acelerado-intento fallido",
     "tag": "CSOP",
-    "contenido": "Estimado XXXXXX ,\nán organizadas previamente, pero haremos lo posible por agilizar la gestión.\nPodrás seguir su trayecto y estado en nuestra web 🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEspero que tengas un excelente dia, \nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nEntendemos que necesita recibir su pedido con mayor urgencia y vamos a trasladar su solicitud al equipo de reparto para intentar priorizar la entrega dentro de lo posible.\nNo podemos garantizar un adelanto en la fecha prevista, ya que las rutas están organizadas previamente, pero haremos lo posible por agilizar la gestión.\nPodrás seguir su trayecto y estado en nuestra web 🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEspero que tengas un excelente dia, \nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 4,
     "categoria": "Plazo de entrega",
-    "subcategoria": "c.Excepción de recogida",
-    "nombre": "Plazo caducado: Solicita reparto de paquete caducado/ devuelto (Pudo/Locker). PUDO",
+    "nombre": "Locker). PUDO",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n: xxxxxxxxxxxxxxxxxxxxxxx.\n\nLe informamos que su  paquete fue dejado en un punto de recogida desde el día xx/xx/xxxx. Desafortunadamente, superado los 9 días naturales para ser recogido el paquete  ha sido devuelto a su origen. Puede solicitar el reembolso de la compra en la pagina donde la compró.\n\nNo podemos enviarle un  justificante porque el  paquete no fue recogido, pero  puede ver el recorrido de tu paquete en nuestra página www.ecoscooting.com\n\nSi tienes alguna pregunta adicional, no dudes en contactarnos.\n\nEquipo de Atención al Cliente de Ecoscooting"
+    "contenido": "Estimado XXXXXX ,\n\nQueremos informarte que hemos recibido tu solicitud referente al paquete: xxxxxxxxxxxxxxxxxxxxxxx.\n\nLe informamos que su  paquete fue dejado en un punto de recogida desde el día xx/xx/xxxx. Desafortunadamente, superado los 9 días naturales para ser recogido el paquete  ha sido devuelto a su origen. Puede solicitar el reembolso de la compra en la pagina donde la compró.\n\nNo podemos enviarle un  justificante porque el  paquete no fue recogido, pero  puede ver el recorrido de tu paquete en nuestra página www.ecoscooting.com\n\nSi tienes alguna pregunta adicional, no dudes en contactarnos.\n\nEquipo de Atención al Cliente de Ecoscooting"
   },
   {
     "id": 5,
     "categoria": "Plazo de entrega",
-    "subcategoria": "c.Excepción de recogida",
     "nombre": "Plazo caducado:  Objetos personales dejados en Locker",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n:\nGracias por avisarnos sobre lo ocurrido en la taquilla.\nEl objeto que encontraste junto a tu paquete corresponde a una pertenencia personal del repartidor, que fue olvidada accidentalmente durante la entrega. \nLamentamos si  esta situación ha ocasionado algun inconveniente..\nVamos a notificar  internamente la situación para evitar que vuelva a suceder.\nTe agradecemos mucho la información.. Si necesitas algo más, estamos aquí para ayudarte.\nAtentamente,\n\nEquipo de Atención al Cliente de Ecoscooting"
+    "contenido": "Estimado XXXXXX ,Gracias por avisarnos sobre lo ocurrido en la taquilla.\nEl objeto que encontraste junto a tu paquete corresponde a una pertenencia personal del repartidor, que fue olvidada accidentalmente durante la entrega. \nLamentamos si  esta situación ha ocasionado algun inconveniente..\nVamos a notificar  internamente la situación para evitar que vuelva a suceder.\nTe agradecemos mucho la información.. Si necesitas algo más, estamos aquí para ayudarte.\nAtentamente,\n\nEquipo de Atención al Cliente de Ecoscooting"
   },
   {
     "id": 6,
     "categoria": "Plazo de entrega",
-    "subcategoria": "c.Excepción de recogida",
     "nombre": "Plazo caducado:  PIN erróneo PUDO",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n(dirección completa acorde a echo)\n\nEsto significa que tu paquete se encuentra a la espera de recogida por tu parte. \n\nPuedes acercarte al punto de recogida con tu DNI para recibir el paquete. Ten presente que estas autorizado a recogerlo sin PIN, teniendo tu identificacion valida (DNI, NIF o Pasaporte).\n\nAgradecemos tu confianza y esperamos que disfrutes tu pedido. \n\nAtentamente, \n\nEquipo de Atención al Cliente de Ecoscooting."
+    "contenido": "Estimado XXXXXX , Leganes,\n\nVerificamos que tu paquete fue entregado exitosamente en un punto de recogida. \nCalle (dirección completa acorde a echo)\n\nEsto significa que tu paquete se encuentra a la espera de recogida por tu parte. \n\nPuedes acercarte al punto de recogida con tu DNI para recibir el paquete. Ten presente que estas autorizado a recogerlo sin PIN, teniendo tu identificacion valida (DNI, NIF o Pasaporte).\n\nAgradecemos tu confianza y esperamos que disfrutes tu pedido. \n\nAtentamente, \n\nEquipo de Atención al Cliente de Ecoscooting."
   },
   {
     "id": 7,
     "categoria": "Plazo de entrega",
-    "subcategoria": "c.Excepción de recogida",
     "nombre": "Plazo caducado:   Locker",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n:\n\nQueremos informarte que tu paquete con el número de seguimiento xxxxxxxxxxxxx ha sido entregado en locker ubicado en la dirección Calle xx  xxxxx, 00\n\nEn este caso es un locker , verifica tu color (Añadir color) , verifica  el ID del locker que aparece en la pantalla o en la pegatina blanca que tiene en la esquina superior derecha (C.LOCKER - (Numero del locker)) y por último ingresa el pin correspondiente al paquete.\n\nPin xxxx\nCasillero xxxxx de la ID\n\nSi tienes alguna pregunta adicional o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte en todo lo que necesites.\n\nSaludos cordiales,\nEquipo de Atención al Cliente de Ecoscooting."
+    "contenido": "Estimado XXXXXX ,\nQueremos informarte que tu paquete con el número de seguimiento xxxxxxxxxxxxx ha sido entregado en locker ubicado en la dirección Calle xx  xxxxx, 00\n\nEn este caso es un locker , verifica tu color (Añadir color) , verifica  el ID del locker que aparece en la pantalla o en la pegatina blanca que tiene en la esquina superior derecha (C.LOCKER - (Numero del locker)) y por último ingresa el pin correspondiente al paquete.\n\nPin xxxx\nCasillero xxxxx de la ID\n\nSi tienes alguna pregunta adicional o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte en todo lo que necesites.\n\nSaludos cordiales,\nEquipo de Atención al Cliente de Ecoscooting."
   },
   {
     "id": 8,
     "categoria": "Plazo de entrega",
-    "subcategoria": "c.Excepción de recogida",
     "nombre": "Plazo caducado:  No es mi paquete Locker",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a  XXXX\nMuchas gracias por su contacto, será un placer ayudarle con su consulta.\n\n Tu paquete con número de seguimiento: 280270000038073962;  ha sido asignado a nuestro área de incidencias para investigar lo ocurrido y darte una solución.En aproximadamente  5 días laborales, el agente que hemos asignado a  tu caso se pondrá en contacto contigo al  teléfono registrado. \n\nNo obstante, vamos a trabajar para acortar este tiempo y contactar lo antes posible. \n\nAgradecemos tu confianza y comprensión en nuestro servicio.\n\nSaludos cordiales,\nEquipo de Atención al Cliente de Ecoscooting."
+    "contenido": "Estimado XXXXXX ,Muchas gracias por su contacto, será un placer ayudarle con su consulta.\n\n Tu paquete con número de seguimiento: 280270000038073962;  ha sido asignado a nuestro área de incidencias para investigar lo ocurrido y darte una solución.En aproximadamente  5 días laborales, el agente que hemos asignado a  tu caso se pondrá en contacto contigo al  teléfono registrado. \n\nNo obstante, vamos a trabajar para acortar este tiempo y contactar lo antes posible. \n\nAgradecemos tu confianza y comprensión en nuestro servicio.\n\nSaludos cordiales,\nEquipo de Atención al Cliente de Ecoscooting."
   },
   {
     "id": 9,
     "categoria": "Plazo de entrega",
-    "subcategoria": "c.Excepción de recogida",
     "nombre": "vacio",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a  XXXX\n\nAnte todo, queremos agradecerle por haberse puesto en contacto con nosotros y lamentamos sinceramente los inconvenientes ocasionados por la entrega incorrecta de su paquete 111300000045184794.\n\n Hemos abierto una incidencia y asignado tu caso a uno de nuestros agentes para  investigar y resolver el problema a la mayor brevedad posible.  Estimamos que en un plazo máximo  de 5  días laborables el agente que hemos asignado a  tu caso se pondrá en contacto contigo al  teléfono registrado. \n \nAgradecemos su confianza y comprensión, estamos trabajando para acortar este tiempo lo antes posible. \n\nSaludos cordiales,\nEquipo de Atención al Cliente Ecoscooting"
+    "contenido": "Estimado XXXXXX ,\nAnte todo, queremos agradecerle por haberse puesto en contacto con nosotros y lamentamos sinceramente los inconvenientes ocasionados por la entrega incorrecta de su paquete 111300000045184794.\n\n Hemos abierto una incidencia y asignado tu caso a uno de nuestros agentes para  investigar y resolver el problema a la mayor brevedad posible.  Estimamos que en un plazo máximo  de 5  días laborables el agente que hemos asignado a  tu caso se pondrá en contacto contigo al  teléfono registrado. \n \nAgradecemos su confianza y comprensión, estamos trabajando para acortar este tiempo lo antes posible. \n\nSaludos cordiales,\nEquipo de Atención al Cliente Ecoscooting"
   },
   {
     "id": 10,
     "categoria": "Experiencia de Servicio",
-    "subcategoria": "a.Falsa entrega",
     "nombre": "Falsa entrega",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nío. \n\nLamentamos profundamente los inconvenientes que esta situación pueda haberle causado y te informamos que estamos tomando medidas  para esclarecer lo ocurrido. \n\nHemos iniciado el proceso de Justificante de Extravío que te enviaremos en un plazo máximo de  3 días laborales  para que puedas gestionar el reembolso en la plataforma donde realizaste la compra. \n\nReiteramos nuestras más sinceras disculpas y quedamos a tu disposición para cualquier aclaración adicional.\nEquipo de Atención al Cliente de Ecoscooting"
+    "contenido": "Estimado XXXXXX ,\n\nHemos revisado su caso con referencia  XXXXXXXXXXXX y comprobamos que  el pedido  figura como  extraviado durante el envío. \n\nLamentamos profundamente los inconvenientes que esta situación pueda haberle causado y te informamos que estamos tomando medidas  para esclarecer lo ocurrido. \n\nHemos iniciado el proceso de Justificante de Extravío que te enviaremos en un plazo máximo de  3 días laborales  para que puedas gestionar el reembolso en la plataforma donde realizaste la compra. \n\nReiteramos nuestras más sinceras disculpas y quedamos a tu disposición para cualquier aclaración adicional.\nEquipo de Atención al Cliente de Ecoscooting"
   },
   {
     "id": 11,
     "categoria": "Experiencia de Servicio",
-    "subcategoria": "b.Paquete incompleto , roto, con artículo erróneo",
     "nombre": "Paquete roto",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n[Número de pedido] ha sido devuelto a su vendedor.\n\nSegún nuestro registro su paquete sufrió daños durante el envío (embalaje rasgado o deteriorado) y, para evitar que lo recibieras en mal estado, se ha procedido a retornarlo a origen.\n\n\nLamentamos sinceramente las molestias que esta situación pueda ocasionarle y le recomendamos contactar con la plataforma donde realizó la compra para solicitar el reembolso del producto e iniciar de nuevo el proceso de compra si así lo desea. \n\n\nReiteramos nuestras más sinceras disculpas y quedamos a tu disposición para cualquier aclaración adicional.\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
+    "contenido": "Estimado XXXXXX , XXXXX.\n\nNos ponemos en contacto contigo para informarte de que tu pedido [Número de pedido] ha sido devuelto a su vendedor.\n\nSegún nuestro registro su paquete sufrió daños durante el envío (embalaje rasgado o deteriorado) y, para evitar que lo recibieras en mal estado, se ha procedido a retornarlo a origen.\n\n\nLamentamos sinceramente las molestias que esta situación pueda ocasionarle y le recomendamos contactar con la plataforma donde realizó la compra para solicitar el reembolso del producto e iniciar de nuevo el proceso de compra si así lo desea. \n\n\nReiteramos nuestras más sinceras disculpas y quedamos a tu disposición para cualquier aclaración adicional.\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
   },
   {
     "id": 12,
     "categoria": "Experiencia de Servicio",
-    "subcategoria": "b.Paquete incompleto , roto, con artículo erróneo",
     "nombre": "Incompleto o erroneo",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a [Nombre del Cliente],\nGracias por ponerse en contacto con nosotros.\nLamentamos la situación que nos describe respecto a su envío [Número de seguimiento]. Entendemos la molestia que puede ocasionar recibir un pedido con algún componente faltante o con daños en el producto.\nEn nuestro caso, como empresa de transporte, nos encargamos únicamente del traslado y la entrega del paquete. La preparación del contenido y el embalaje interno dependen directamente del vendedor.\nPor ello, le recomendamos contactar directamente con la plataforma   donde realizó la compra para que puedan gestionar la incidencia y ofrecerle una solución adecuada.\nReiteramos nuestras más sinceras disculpas y quedamos a tu disposición para cualquier aclaración adicional.\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
+    "contenido": "Estimado XXXXXX ,\nGracias por ponerse en contacto con nosotros.\nLamentamos la situación que nos describe respecto a su envío [Número de seguimiento]. Entendemos la molestia que puede ocasionar recibir un pedido con algún componente faltante o con daños en el producto.\nEn nuestro caso, como empresa de transporte, nos encargamos únicamente del traslado y la entrega del paquete. La preparación del contenido y el embalaje interno dependen directamente del vendedor.\nPor ello, le recomendamos contactar directamente con la plataforma   donde realizó la compra para que puedan gestionar la incidencia y ofrecerle una solución adecuada.\nReiteramos nuestras más sinceras disculpas y quedamos a tu disposición para cualquier aclaración adicional.\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
   },
   {
     "id": 13,
     "categoria": "Experiencia de Servicio",
-    "subcategoria": "c.Queja sobre el servicio",
     "nombre": "Queja sobre el servicio Logistica",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nístico no haya estado a la altura de sus expectativas. \nTrabajamos continuamente para ofrecer un servicio eficiente y de calidad, por lo que comentarios como el suyo nos ayudan a identificar áreas de mejora.\nHemos escalado internamente su incidencia para analizar lo ocurrido y tomar medidas necesarias..\nLe pedimos disculpas por los inconvenientes ocasionados y quedamos a su disposición para cualquier aclaración adicional o información que desee compartirnos.\nAgradecemos su confianza, \nEquipo de Atención al cliente de Ecoscooting"
+    "contenido": "Estimado XXXXXX ,\nGracias por trasladarnos su experiencia.\nLamentamos sinceramente que el servicio logístico no haya estado a la altura de sus expectativas. \nTrabajamos continuamente para ofrecer un servicio eficiente y de calidad, por lo que comentarios como el suyo nos ayudan a identificar áreas de mejora.\nHemos escalado internamente su incidencia para analizar lo ocurrido y tomar medidas necesarias..\nLe pedimos disculpas por los inconvenientes ocasionados y quedamos a su disposición para cualquier aclaración adicional o información que desee compartirnos.\nAgradecemos su confianza, \nEquipo de Atención al cliente de Ecoscooting"
   },
   {
     "id": 14,
     "categoria": "Experiencia de Servicio",
-    "subcategoria": "c.Queja sobre el servicio",
     "nombre": "Queja sobre actitud del agente",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón al cliente no haya estado a la altura de sus expectativas. \nTrabajamos continuamente para ofrecer un servicio eficiente y de calidad, por lo que comentarios como el suyo nos ayudan a identificar áreas de mejora.\nHemos escalado internamente su incidencia para analizar lo ocurrido y tomar medidas necesarias..\nLe pedimos disculpas por los inconvenientes ocasionados y quedamos a su disposición para cualquier aclaración adicional o información que desee compartirnos.\nAgradecemos su confianza, \nEquipo de Atención al cliente de Ecoscooting"
+    "contenido": "Estimado XXXXXX ,\nGracias por trasladarnos su experiencia.\nLamentamos sinceramente que el servicio de atención al cliente no haya estado a la altura de sus expectativas. \nTrabajamos continuamente para ofrecer un servicio eficiente y de calidad, por lo que comentarios como el suyo nos ayudan a identificar áreas de mejora.\nHemos escalado internamente su incidencia para analizar lo ocurrido y tomar medidas necesarias..\nLe pedimos disculpas por los inconvenientes ocasionados y quedamos a su disposición para cualquier aclaración adicional o información que desee compartirnos.\nAgradecemos su confianza, \nEquipo de Atención al cliente de Ecoscooting"
   },
   {
     "id": 15,
     "categoria": "Experiencia de Servicio",
-    "subcategoria": "c.Queja sobre el servicio",
     "nombre": "Queja sobre actitud del empleado de PUDO",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón brindada por el personal del punto de recogida  y lamentamos sinceramente la experiencia que nos describe. Este tipo de situaciones no reflejan los estándares de calidad ni el compromiso de servicio que promovemos en nuestras operaciones.\nHemos escalado internamente su incidencia para analizar lo ocurrido y tomar medidas necesarias.\nLe pedimos disculpas por los inconvenientes ocasionados y  agradecemos que nos haya informado, ya que sus comentarios son fundamentales para mejorar continuamente nuestros procesos y la experiencia de nuestros clientes.\n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente"
+    "contenido": "Estimado XXXXXX ,\n\nGracias por trasladarnos su experiencia.\n\nHemos recibido su comentario referente a la atención brindada por el personal del punto de recogida  y lamentamos sinceramente la experiencia que nos describe. Este tipo de situaciones no reflejan los estándares de calidad ni el compromiso de servicio que promovemos en nuestras operaciones.\nHemos escalado internamente su incidencia para analizar lo ocurrido y tomar medidas necesarias.\nLe pedimos disculpas por los inconvenientes ocasionados y  agradecemos que nos haya informado, ya que sus comentarios son fundamentales para mejorar continuamente nuestros procesos y la experiencia de nuestros clientes.\n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente"
   },
   {
     "id": 16,
     "categoria": "Experiencia de Servicio",
-    "subcategoria": "c.Queja sobre el servicio",
     "nombre": "Queja sobre actitud del repartidor",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón brindada por el repartidor. \n\nEste tipo de situaciones no reflejan los estándares de calidad ni el compromiso de servicio que promovemos en nuestras operaciones.\n\nHemos escalado internamente su incidencia para analizar lo ocurrido y tomar medidas necesarias.\n\nAgradecemos que nos lo haya comunicado, ya que este tipo de avisos nos permite mejorar continuamente nuestro servicio.\n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente"
+    "contenido": "Estimado XXXXXX ,\n\nLamentamos sinceramente la experiencia que ha recibido  referente a la atención brindada por el repartidor. \n\nEste tipo de situaciones no reflejan los estándares de calidad ni el compromiso de servicio que promovemos en nuestras operaciones.\n\nHemos escalado internamente su incidencia para analizar lo ocurrido y tomar medidas necesarias.\n\nAgradecemos que nos lo haya comunicado, ya que este tipo de avisos nos permite mejorar continuamente nuestro servicio.\n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente"
   },
   {
     "id": 17,
     "categoria": "Experiencia de Servicio",
-    "subcategoria": "d.Queja sobre el servicio",
     "nombre": "Falso ausente",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nún el registro del mensajero, se realizó un intento de entrega en la dirección indicada, pero no fue posible completar la entrega en ese momento.\nEntendemos que nos indicas que estabas en casa, por lo que vamos a revisar lo sucedido  para aclararlo cuanto antes.\nPero no te preocupes, volvemos a poner el paquete en reparto para ser entregado lo antes posible,  📦puedes seguir su trayecto y estado en nuestra web 🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por tu mensaje. Lamentamos lo ocurrido. Según el registro del mensajero, se realizó un intento de entrega en la dirección indicada, pero no fue posible completar la entrega en ese momento.\nEntendemos que nos indicas que estabas en casa, por lo que vamos a revisar lo sucedido  para aclararlo cuanto antes.\nPero no te preocupes, volvemos a poner el paquete en reparto para ser entregado lo antes posible,  📦puedes seguir su trayecto y estado en nuestra web 🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 18,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "a.Consulta de información",
     "nombre": "Consulta el estado del paquete",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nío se encuentra actualmente en reparto y aunque no podemos concretar la hora exacta de entrega si podemos facilitar tanto el trayecto como el estado a través de nuestra web 🌐 www.ecoscooting.com.\n\nSi tienes alguna pregunta adicional, no dudes en contactarnos.\n\n\nConfiamos en que en breve 😄\nAtentamente, \nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX , xxxx,\n\n\nLe informamos que su envío se encuentra actualmente en reparto y aunque no podemos concretar la hora exacta de entrega si podemos facilitar tanto el trayecto como el estado a través de nuestra web 🌐 www.ecoscooting.com.\n\nSi tienes alguna pregunta adicional, no dudes en contactarnos.\n\n\nConfiamos en que en breve 😄\nAtentamente, \nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 19,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "a.Consulta de información",
-    "nombre": "El plazo que se puede guardar el paquete PUDO/",
+    "nombre": "",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a cliente:\n\nGracias por contactarnos.\n\nLe informamos que, una vez el paquete llega al punto Punto de recogida y queda disponible para su recogida, el plazo de permanencia es de 9 días continuos. Durante este periodo podrá acudir a retirarlo presentando la información requerida para la entrega.\n\nAsimismo, le informamos que cuando el paquete se encuentra entregado en el Punto de Recogida recibirá  un correo electrónico o mensaje con los datos del punto de recogida asignado y la información necesaria para retirar su paquete.\n\n\nPuede consultar  el estado actualizado de su envío a través de nuestra web: www.ecoscooting.com. \n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\n\nLe informamos que, una vez el paquete llega al punto Punto de recogida y queda disponible para su recogida, el plazo de permanencia es de 9 días continuos. Durante este periodo podrá acudir a retirarlo presentando la información requerida para la entrega.\n\nAsimismo, le informamos que cuando el paquete se encuentra entregado en el Punto de Recogida recibirá  un correo electrónico o mensaje con los datos del punto de recogida asignado y la información necesaria para retirar su paquete.\n\n\nPuede consultar  el estado actualizado de su envío a través de nuestra web: www.ecoscooting.com. \n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 20,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "a.Consulta de información",
     "nombre": "El plazo que se puede guardar el paquete Locker",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n:\n\nGracias por contactarnos.\n\nLe informamos que, una vez el paquete llega al Locker  quedará disponible para su recogida.El plazo de permanencia es de 5 días. Durante este periodo podrá retirarlo utilizando los datos de acceso proporcionados.\n\nPuede consultar las fechas y el estado actualizado de su envío a través de nuestra web  🌐 www.ecoscooting.com.\n\nAsimismo, recibirá un correo electrónico o mensaje con la información del Locker, así como el código o instrucciones necesarias para la recogida.\n\nLe recomendamos retirarlo dentro de este plazo para evitar que el envío sea retirado.\n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\n\nLe informamos que, una vez el paquete llega al Locker  quedará disponible para su recogida.El plazo de permanencia es de 5 días. Durante este periodo podrá retirarlo utilizando los datos de acceso proporcionados.\n\nPuede consultar las fechas y el estado actualizado de su envío a través de nuestra web  🌐 www.ecoscooting.com.\n\nAsimismo, recibirá un correo electrónico o mensaje con la información del Locker, así como el código o instrucciones necesarias para la recogida.\n\nLe recomendamos retirarlo dentro de este plazo para evitar que el envío sea retirado.\n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 21,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "a.Consulta de información",
-    "nombre": "Pin de PUDO Locker",
+    "nombre": "Sin Pin de PUDO",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a cliente:\n\nGracias por contactarnos.\n\nLe informamos que, una vez el paquete llega al Locker recibirá un correo electronico o mensaje con la información del Locker asi como el codigo o instrucciones necesarias para su retirada. \n\nPuede consultar las fechas y el estado actualizado de su envío a través de nuestra web: 🌐 www.ecoscooting.com.\n\nLe recomendamos retirarlo dentro de este plazo para evitar que el envío sea retirado.\n\nQuedamos a su disposición para cualquier otra consulta.\n\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado/a cliente:"
   },
   {
     "id": 22,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "a.Consulta de información",
-    "nombre": "Sin Pin de PUDO",
-    "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a cliente:"
-  },
-  {
-    "id": 23,
-    "categoria": "Solicitud del Cliente",
-    "subcategoria": "a.Consulta de información",
     "nombre": "Dirección Horario de Pudo Locker",
     "tag": "COSP",
     "contenido": "Estimado XXXXXX ,"
   },
   {
-    "id": 24,
+    "id": 23,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "a.Consulta de información",
     "nombre": "Por qué el paquete fue devuelto",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón con su consulta, le informamos que un envío puede ser devuelto por distintos motivos operativos. Entre las causas más habituales se encuentran la imposibilidad de completar los intentos de entrega establecidos o la detección de daños en el paquete que impidan su entrega en condiciones adecuadas.\nCuando se produce alguna de estas situaciones, el envío es retornado siguiendo el procedimiento logístico correspondiente.\nPara cualquier gestión adicional, seguimiento o solicitud relacionada con su pedido, le recomendamos contactar directamente con el vendedor o con la plataforma donde realizó la compra, ya que son quienes pueden facilitarle información detallada y ofrecerle una solución sobre el estado final del envío.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos. \nEn relación con su consulta, le informamos que un envío puede ser devuelto por distintos motivos operativos. Entre las causas más habituales se encuentran la imposibilidad de completar los intentos de entrega establecidos o la detección de daños en el paquete que impidan su entrega en condiciones adecuadas.\nCuando se produce alguna de estas situaciones, el envío es retornado siguiendo el procedimiento logístico correspondiente.\nPara cualquier gestión adicional, seguimiento o solicitud relacionada con su pedido, le recomendamos contactar directamente con el vendedor o con la plataforma donde realizó la compra, ya que son quienes pueden facilitarle información detallada y ofrecerle una solución sobre el estado final del envío.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+  },
+  {
+    "id": 24,
+    "categoria": "Solicitud del Cliente",
+    "nombre": "Por qué el paquete entra en PUDO Locker",
+    "tag": "COSP",
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nEn relación con su consulta, le informamos que, en determinadas circunstancias, el envío puede ser derivado a un punto de recogida (PUDO) o a un Locker como modalidad alternativa de entrega.\nEsta situación puede producirse cuando no ha sido posible completar la entrega en el domicilio tras los intentos establecidos, o cuando, por razones operativas y de cobertura en la zona, se habilita un punto de recogida cercano para garantizar que pueda recibir su paquete con mayor agilidad.\nEl objetivo de esta medida es facilitar la entrega, evitar demoras adicionales y prevenir la devolución del envío al remitente.\nPuede consultar los detalles y la ubicación del punto asignado a través del enlace de seguimiento de su pedido.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 25,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "a.Consulta de información",
-    "nombre": "Por qué el paquete entra en PUDO Locker",
+    "nombre": "Solicita llamar antes de la entrega",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón con su consulta, le informamos que, en determinadas circunstancias, el envío puede ser derivado a un punto de recogida (PUDO) o a un Locker como modalidad alternativa de entrega.\nEsta situación puede producirse cuando no ha sido posible completar la entrega en el domicilio tras los intentos establecidos, o cuando, por razones operativas y de cobertura en la zona, se habilita un punto de recogida cercano para garantizar que pueda recibir su paquete con mayor agilidad.\nEl objetivo de esta medida es facilitar la entrega, evitar demoras adicionales y prevenir la devolución del envío al remitente.\nPuede consultar los detalles y la ubicación del punto asignado a través del enlace de seguimiento de su pedido.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nEn relación con su solicitud, le informamos que no es posible programar llamadas previas a la entrega, ya que nuestros repartidores realizan rutas previamente planificadas con tiempos y paradas organizadas para garantizar el cumplimiento del servicio.\nLa primera gestión siempre consiste en acudir directamente al domicilio o punto de entrega indicado en el envío.\nNo obstante, si surgiera alguna incidencia con la dirección o si el repartidor se encontrara en el domicilio sin obtener respuesta, podría realizar una llamada de contacto en ese momento, siempre que las condiciones operativas lo permitan.\nLe recomendamos estar pendiente el día de la entrega para facilitar la recepción del paquete.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 26,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "b.Cambios",
-    "nombre": "Solicita llamar antes de la entrega",
+    "nombre": "Solicita ampliar el plazo de guardar en PUDO Locker",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón con su solicitud, le informamos que no es posible programar llamadas previas a la entrega, ya que nuestros repartidores realizan rutas previamente planificadas con tiempos y paradas organizadas para garantizar el cumplimiento del servicio.\nLa primera gestión siempre consiste en acudir directamente al domicilio o punto de entrega indicado en el envío.\nNo obstante, si surgiera alguna incidencia con la dirección o si el repartidor se encontrara en el domicilio sin obtener respuesta, podría realizar una llamada de contacto en ese momento, siempre que las condiciones operativas lo permitan.\nLe recomendamos estar pendiente el día de la entrega para facilitar la recepción del paquete.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nEn relación con su solicitud, le informamos que no es posible ampliar el plazo de permanencia del envío en el punto de recogida (PUDO) o Locker. El tiempo disponible para la retirada está previamente establecido dentro del sistema logístico y se gestiona de forma automática. Una vez finalizado dicho plazo, el paquete deja de estar disponible y se inicia el proceso de devolución al remitente conforme al procedimiento operativo.\nComo alternativa, puede autorizar a otra persona para que realice la recogida en su nombre dentro del periodo habilitado. Para ello, la persona autorizada deberá presentar una copia de su documento de identidad, así como una copia del documento de identidad del titular del envío, en el momento de la retirada.\nLe recomendamos efectuar la recogida dentro del plazo indicado en el seguimiento para evitar la devolución del paquete.\nQuedamos a su disposición para cualquier otra consulta que pueda necesitar.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 27,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "b.Cambios",
-    "nombre": "Solicita ampliar el plazo de guardar en PUDO Locker",
+    "nombre": "Cambio Opción Entrega",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón con su solicitud, le informamos que no es posible ampliar el plazo de permanencia del envío en el punto de recogida (PUDO) o Locker. El tiempo disponible para la retirada está previamente establecido dentro del sistema logístico y se gestiona de forma automática. Una vez finalizado dicho plazo, el paquete deja de estar disponible y se inicia el proceso de devolución al remitente conforme al procedimiento operativo.\nComo alternativa, puede autorizar a otra persona para que realice la recogida en su nombre dentro del periodo habilitado. Para ello, la persona autorizada deberá presentar una copia de su documento de identidad, así como una copia del documento de identidad del titular del envío, en el momento de la retirada.\nLe recomendamos efectuar la recogida dentro del plazo indicado en el seguimiento para evitar la devolución del paquete.\nQuedamos a su disposición para cualquier otra consulta que pueda necesitar.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,Gracias por contactarnos.\nLe informamos que los envíos asignados a entrega a domicilio solo pueden derivarse a un punto PUDO o Locker si no se logra completar la entrega y existe un punto disponible a menos de 700 metros de la dirección indicada, con el fin de facilitar la recepción del paquete.\nAsimismo, cuando un envío ya está asignado a un punto de recogida, no es posible modificar manualmente la modalidad de entrega, ya que estas gestiones se realizan de forma automática dentro del sistema logístico.\nAgradecemos tu confianza y comprensión.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 28,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "b.Cambios",
-    "nombre": "Cambio Opción Entrega",
+    "nombre": "Cambio de telefono",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a [Nombre]:\nGracias por contactarnos.\nLe informamos que los envíos asignados a entrega a domicilio solo pueden derivarse a un punto PUDO o Locker si no se logra completar la entrega y existe un punto disponible a menos de 700 metros de la dirección indicada, con el fin de facilitar la recepción del paquete.\nAsimismo, cuando un envío ya está asignado a un punto de recogida, no es posible modificar manualmente la modalidad de entrega, ya que estas gestiones se realizan de forma automática dentro del sistema logístico.\nAgradecemos tu confianza y comprensión.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nEn relación con su solicitud, le informamos que no es posible modificar el número de teléfono asociado al envío, ya que este dato se genera directamente desde la información registrada en el momento de la compra y se integra automáticamente en nuestro sistema logístico.\n\nLamentamos cualquier inconveniente que esta situación pueda ocasionar y agradecemos tu comprensión.\n\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\n\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 29,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "b.Cambios",
-    "nombre": "Cambio de telefono",
+    "nombre": "Cambio de dirección POSIBLE",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a XXXX :\n\nGracias por contactarnos.\nEn relación con su solicitud, le informamos que no es posible modificar el número de teléfono asociado al envío, ya que este dato se genera directamente desde la información registrada en el momento de la compra y se integra automáticamente en nuestro sistema logístico.\n\nLamentamos cualquier inconveniente que esta situación pueda ocasionar y agradecemos tu comprensión.\n\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\n\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\n\nMuchas gracias por su contacto, será un placer ayudarle con su consulta.\n\nTe informamos que la dirección  ha sido actualizada con éxito en nuestro sistema para la entrega de tu paquete.\n\nTen en cuenta que este ajuste puede generar un retraso en la entrega.\nTe facilitamos además el seguimiento del trayecto y estado de su paquete en nuestra web  🌐 www.ecoscooting.com.\nSi tienes alguna otra consulta o necesitas asistencia adicional, no dudes en contactarnos. Estamos aquí para ayudarte.\n\nEsperamos  que tengas un excelente dia,😄.\nEquipo de Atención al Cliente de Ecoscooting."
   },
   {
     "id": 30,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "b.Cambios",
-    "nombre": "Cambio de dirección POSIBLE",
+    "nombre": "Cambio de dirección NO POSIBLE",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\ná un placer ayudarle con su consulta.\n\nTe informamos que la dirección  ha sido actualizada con éxito en nuestro sistema para la entrega de tu paquete.\n\nTen en cuenta que este ajuste puede generar un retraso en la entrega.\nTe facilitamos además el seguimiento del trayecto y estado de su paquete en nuestra web  🌐 www.ecoscooting.com.\nSi tienes alguna otra consulta o necesitas asistencia adicional, no dudes en contactarnos. Estamos aquí para ayudarte.\n\nEsperamos  que tengas un excelente dia,😄.\nEquipo de Atención al Cliente de Ecoscooting."
+    "contenido": "Estimado XXXXXX ,\nMuchas gracias por contactarnos. Es un placer ayudarle con su consulta.\nLe informamos que la nueva dirección solicitada ha sido actualizada correctamente en nuestro sistema para la entrega de su paquete.\nTenga en cuenta que esta modificación puede ocasionar un ligero retraso en el plazo de entrega, debido a la reorganización logística necesaria.\nSi tiene cualquier otra consulta o necesita asistencia adicional, no dude en contactarnos. Estaremos encantados de ayudarle.\nLe agradecemos su comunicación y le deseamos un excelente día.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting."
   },
   {
     "id": 31,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "b.Cambios",
-    "nombre": "Cambio de dirección NO POSIBLE",
+    "nombre": "Cambio de tiempo de entrega",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón solicitada ha sido actualizada correctamente en nuestro sistema para la entrega de su paquete.\nTenga en cuenta que esta modificación puede ocasionar un ligero retraso en el plazo de entrega, debido a la reorganización logística necesaria.\nSi tiene cualquier otra consulta o necesita asistencia adicional, no dude en contactarnos. Estaremos encantados de ayudarle.\nLe agradecemos su comunicación y le deseamos un excelente día.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting."
+    "contenido": "Estimado XXXXXX ,\nEntendemos su solicitud de programar una fecha u hora específica de entrega, sin embargo , las rutas están organizadas previamente lo que nos impide concretar con exactitud su petición.\nNo obstante, en caso de que la entrega no pueda completarse en el intento programado , se generará automáticamente un nuevo intento en un plazo no mayor de 72 horas laborables. \nPara su tranquilidad, le facilitamos además el seguimiento del trayecto y estado de su paquete en nuestra web  🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 32,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "b.Cambios",
-    "nombre": "Cambio de tiempo de entrega",
+    "nombre": "Devolución Reembolso Cancelación",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nífica de entrega, sin embargo , las rutas están organizadas previamente lo que nos impide concretar con exactitud su petición.\nNo obstante, en caso de que la entrega no pueda completarse en el intento programado , se generará automáticamente un nuevo intento en un plazo no mayor de 72 horas laborables. \nPara su tranquilidad, le facilitamos además el seguimiento del trayecto y estado de su paquete en nuestra web  🌐 www.ecoscooting.com.\nConfiamos en que en breve sea entregado!\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nEn relación con su solicitud, le informamos que, una vez el envío ha sido expedido y se encuentra en proceso logístico, no es posible gestionar su cancelación ni el reembolso desde nuestra parte.\nSi la entrega no pudiera completarse en el primer intento, el sistema generará automáticamente un segundo intento dentro de un plazo máximo de 72 horas laborales.\nTambien puede consultar  el seguimiento del trayecto y estado de su paquete en nuestra web  🌐 www.ecoscooting.com.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 33,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Reembolso Cancelación",
+    "nombre": "Devolución Devulción - ya entregado",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a xxx,\nGracias por contactarnos.\nEn relación con su solicitud, le informamos que, una vez el envío ha sido expedido y se encuentra en proceso logístico, no es posible gestionar su cancelación ni el reembolso desde nuestra parte.\nSi la entrega no pudiera completarse en el primer intento, el sistema generará automáticamente un segundo intento dentro de un plazo máximo de 72 horas laborales.\nTambien puede consultar  el seguimiento del trayecto y estado de su paquete en nuestra web  🌐 www.ecoscooting.com.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,:\nGracias por contactarnos. \nHemos recibido su solicitud para devolver el paquete #XXXXXXXXX , sin embargo,  su envío se encuentra en reparto.\nPara que el paquete pueda retornar al vendedor, será necesario esperar a que nuestro repartidor se presente en su domicilio. En ese momento, podrá rechazar la entrega formalmente, y nuestro sistema iniciará automáticamente el proceso de devolución a origen.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 34,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Devulción - ya entregado",
+    "nombre": "Devolución Devulción - Reembolso paquetes Temu o TikTok",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n:\nGracias por contactarnos. \nHemos recibido su solicitud para devolver el paquete #XXXXXXXXX , sin embargo,  su envío se encuentra en reparto.\nPara que el paquete pueda retornar al vendedor, será necesario esperar a que nuestro repartidor se presente en su domicilio. En ese momento, podrá rechazar la entrega formalmente, y nuestro sistema iniciará automáticamente el proceso de devolución a origen.\nQuedamos a su disposición para cualquier otra consulta.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX , \nGracias por contactanos. \nQueremos informarle que, según nuestra política de servicio, una vez que un paquete ha sido entregado correctamente, no gestionamos devoluciones directas. \nEn caso de que desee devolver un artículo, le recomendamos ponerse en contacto con el proveedor de origen, ya que ellos podrán coordinar la devolución a través de la empresa logística que consideren adecuada.\nSi tiene alguna otra consulta o necesita asistencia adicional, no dude en contactarnos. Estaremos encantados de ayudarle. 💌\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 35,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Devulción - Reembolso paquetes Temu o TikTok",
+    "nombre": "Devolución Devulción -Reembolso por perdida de Ecoscooting",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nún nuestra política de servicio, una vez que un paquete ha sido entregado correctamente, no gestionamos devoluciones directas. \nEn caso de que desee devolver un artículo, le recomendamos ponerse en contacto con el proveedor de origen, ya que ellos podrán coordinar la devolución a través de la empresa logística que consideren adecuada.\nSi tiene alguna otra consulta o necesita asistencia adicional, no dude en contactarnos. Estaremos encantados de ayudarle. 💌\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nQueremos informarle que, según nuestro seguimiento logístico, su paquete no llegó correctamente a destino debido a un incidente durante el reparto. Entendemos lo incómodo que esto puede resultar y lamentamos sinceramente las molestias ocasionadas.\nPara gestionar el reembolso o la reposición del pedido, le recomendamos ponerse en contacto directamente con la plataforma donde realizó la compra, quienes podrán brindarle la solución más rápida y adecuada.\nSentimos los inconvenientes que esto pueda generar y valoramos mucho su comprensión.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 36,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Devulción -Reembolso por perdida de Ecoscooting",
+    "nombre": "Devolución Devulción - Reembolso cuando no llego a Ecoscooting",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nún nuestro seguimiento logístico, su paquete no llegó correctamente a destino debido a un incidente durante el reparto. Entendemos lo incómodo que esto puede resultar y lamentamos sinceramente las molestias ocasionadas.\nPara gestionar el reembolso o la reposición del pedido, le recomendamos ponerse en contacto directamente con la plataforma donde realizó la compra, quienes podrán brindarle la solución más rápida y adecuada.\nSentimos los inconvenientes que esto pueda generar y valoramos mucho su comprensión.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nTras revisar su reclamación sobre la no recepción de su paquete, lamentamos informarle que se ha registrado como paquete perdido sin llegar a nuestros almacenes.\nEn breve recibirá en su correo electrónico un justificante de extravío, que podrá utilizar para gestionar el reembolso o la reposición directamente a través de la plataforma donde realizó la compra.\nLamentamos sinceramente las molestias que esta situación   pueda haberle causado y agradecemos su comprensión. \nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 37,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Devulción - Reembolso cuando no llego a Ecoscooting",
+    "nombre": "Devolución Devulción - Reembolso cuando fue devuelto",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón sobre la no recepción de su paquete, lamentamos informarle que se ha registrado como paquete perdido sin llegar a nuestros almacenes.\nEn breve recibirá en su correo electrónico un justificante de extravío, que podrá utilizar para gestionar el reembolso o la reposición directamente a través de la plataforma donde realizó la compra.\nLamentamos sinceramente las molestias que esta situación   pueda haberle causado y agradecemos su comprensión. \nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos..\nLe informamos que ya hemos emitido el justificante correspondiente por la pérdida de su paquete. \nCon este documento podrá solicitar el reembolso directamente a través de la entidad o plataforma donde realizó la compra, ya que está autorizado para servir como respaldo en el proceso de reclamación.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
   },
   {
     "id": 38,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Devulción - Reembolso cuando fue devuelto",
+    "nombre": "Devolución Devulción - Reembolso por paquete dañado - recibido",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nérdida de su paquete. \nCon este documento podrá solicitar el reembolso directamente a través de la entidad o plataforma donde realizó la compra, ya que está autorizado para servir como respaldo en el proceso de reclamación.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nQueremos informarte que tu paquete fue devuelto a origen el día xx-xx-xxxx, por lo que no es posible programar una nueva fecha de entrega. En este caso, te recomendamos iniciar el proceso de reembolso directamente con la tienda o plataforma donde realizaste la compra. 🛍️\nEn breve recibirás un correo con una encuesta para calificar la atención brindada hoy; tu opinión nos ayuda a mejorar continuamente. 🙌\nGracias por contactarnos y que tengas un excelente día. 🌞\nAtentamente,\nEquipo de Atención al Cliente\nEcoscooting Delivery SL 💚"
   },
   {
     "id": 39,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Devulción - Reembolso por paquete dañado - recibido",
+    "nombre": "Devolución Devulción - Reembolso Reembolso por paquete dañado daño visible por fuera - a penas llega almacen",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nía xx-xx-xxxx, por lo que no es posible programar una nueva fecha de entrega. En este caso, te recomendamos iniciar el proceso de reembolso directamente con la tienda o plataforma donde realizaste la compra. 🛍️\nEn breve recibirás un correo con una encuesta para calificar la atención brindada hoy; tu opinión nos ayuda a mejorar continuamente. 🙌\nGracias por contactarnos y que tengas un excelente día. 🌞\nAtentamente,\nEquipo de Atención al Cliente\nEcoscooting Delivery SL 💚"
+    "contenido": "Estimado XXXXXX ,\nGracias por ponerse en contacto con nosotros.\nLamentamos la situación que nos describe respecto a su envío [Número de seguimiento]. Entendemos la molestia que puede ocasionar recibir un pedido con algún componente faltante o con daños en el producto.\nEn nuestro caso, como empresa de transporte, nos encargamos únicamente del traslado y la entrega del paquete. La preparación del contenido y el embalaje interno dependen directamente del vendedor.\nPor ello, le recomendamos contactar directamente con la plataforma   donde realizó la compra para que puedan gestionar la incidencia y ofrecerle una solución adecuada.\nReiteramos nuestras más sinceras disculpas y quedamos a tu disposición para cualquier aclaración adicional.\n\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
   },
   {
     "id": 40,
     "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Devulción - Reembolso Reembolso por paquete dañado daño visible por fuera - a penas llega almacen",
+    "nombre": "Devolución Devulción - Reembolso",
     "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón que nos describe respecto a su envío [Número de seguimiento]. Entendemos la molestia que puede ocasionar recibir un pedido con algún componente faltante o con daños en el producto.\nEn nuestro caso, como empresa de transporte, nos encargamos únicamente del traslado y la entrega del paquete. La preparación del contenido y el embalaje interno dependen directamente del vendedor.\nPor ello, le recomendamos contactar directamente con la plataforma   donde realizó la compra para que puedan gestionar la incidencia y ofrecerle una solución adecuada.\nReiteramos nuestras más sinceras disculpas y quedamos a tu disposición para cualquier aclaración adicional.\n\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos.\nLe informamos que, tras la verificación correspondiente, su envío ha presentado una incidencia operativa y se considera extraviado dentro del proceso logístico.\nEn un plazo máximo de 3 días laborales, recibirá un justificante de pérdida. Este documento le permitirá continuar con las gestiones necesarias ante el vendedor o la plataforma donde realizó la compra.\nLamentamos sinceramente los inconvenientes que esta situación pueda causarle y agradecemos mucho su comprensión.\nQuedamos a su disposición para cualquier otra consulta o asistencia que pueda necesitar.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
   },
   {
     "id": 41,
-    "categoria": "Solicitud del Cliente",
-    "subcategoria": "c.Devolución Reembolsos Cancelación",
-    "nombre": "Devolución Devulción - Reembolso",
-    "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón correspondiente, su envío ha presentado una incidencia operativa y se considera extraviado dentro del proceso logístico.\nEn un plazo máximo de 3 días laborales, recibirá un justificante de pérdida. Este documento le permitirá continuar con las gestiones necesarias ante el vendedor o la plataforma donde realizó la compra.\nLamentamos sinceramente los inconvenientes que esta situación pueda causarle y agradecemos mucho su comprensión.\nQuedamos a su disposición para cualquier otra consulta o asistencia que pueda necesitar.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
+    "categoria": "Escalada de insatisfacción",
+    "nombre": ". P2:Reclamaciones frecuentes",
+    "tag": "CSOP",
+    "contenido": "Estimado XXXXXX ,\nGracias por contactarnos \nLe informamos que su caso ya se encuentra bajo investigación y se ha generado la incidencia correspondiente para su resolución. El equipo encargado está trabajando para concluir el proceso y dar  respuesta a su incidencia en un plazo aproximado de entre 3 y 5 días hábiles. \nAgradecemos su paciencia y colaboración.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
   },
   {
     "id": 42,
     "categoria": "Escalada de insatisfacción",
-    "subcategoria": "a. P2:Reclamaciones frecuentes",
-    "nombre": "P2:Reclamaciones frecuentes",
-    "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\n/a Xxxx,\nGracias por contactarnos \nLe informamos que su caso ya se encuentra bajo investigación y se ha generado la incidencia correspondiente para su resolución. El equipo encargado está trabajando para concluir el proceso y dar  respuesta a su incidencia en un plazo aproximado de entre 3 y 5 días hábiles. \nAgradecemos su paciencia y colaboración.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
+    "nombre": "P1:Escalada por tendencia de denuncia",
+    "tag": "CSOP",
+    "contenido": "Estimado XXXXXX , \nGracias por contactarnos.\nHemos recibido sus mensajes y comprendemos la importancia de contar con una solución rápida a su caso. Le informamos que se ha generado un ticket de incidencia y que nuestro equipo especializado está gestionando su envío hasta su resolución definitiva.\n En caso de que no sea posible por motivos operativos, gestionaremos como alternativa el procedimiento  para asegurar que no pierda el importe de la compra.\nRecibirá seguimiento constante hasta que la incidencia se cierre satisfactoriamente.\nAgradecemos su confianza y colaboración.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
   },
   {
     "id": 43,
     "categoria": "Escalada de insatisfacción",
-    "subcategoria": "b.   P1:Escalada por tendencia de denuncia",
-    "nombre": "P1:Escalada por tendencia de denuncia",
-    "tag": "COSP",
-    "contenido": "Estimado XXXXXX ,\nón rápida a su caso. Le informamos que se ha generado un ticket de incidencia y que nuestro equipo especializado está gestionando su envío hasta su resolución definitiva.\n En caso de que no sea posible por motivos operativos, gestionaremos como alternativa el procedimiento  para asegurar que no pierda el importe de la compra.\nRecibirá seguimiento constante hasta que la incidencia se cierre satisfactoriamente.\nAgradecemos su confianza y colaboración.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
-  },
-  {
-    "id": 44,
-    "categoria": "Escalada de insatisfacción",
-    "subcategoria": "c.  Escalada por seguridad de datos",
     "nombre": "Escalada por seguridad de datos",
     "tag": "CSOP",
     "contenido": "Estimado XXXXXX ,"
   },
   {
-    "id": 45,
+    "id": 44,
     "categoria": "Otras Consultas",
-    "subcategoria": "b.   Información promocional",
     "nombre": "Informacion sobre acoso",
     "tag": "CSOP",
-    "contenido": "Estimado XXXXXX ,\n:\nGracias por contactarnos.\nHemos recibido su reporte y lamentamos sinceramente la situación que nos ha comunicado. \nSu caso será trasladado de inmediato a los responsables correspondientes y a los supervisores directos del empleado implicado, para revisar lo sucedido y tomar las acciones necesarias.\nNuestro compromiso es garantizar un servicio seguro, respetuoso y profesional. Se llevará a cabo la gestión interna correspondiente para esclarecer los hechos y prevenir que situaciones similares ocurran en el futuro.\nAgradecemos que nos haya informado y quedamos a su disposición para recibir cualquier información adicional que considere relevante.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
+    "contenido": "Estimado XXXXXX ,:\nGracias por contactarnos.\nHemos recibido su reporte y lamentamos sinceramente la situación que nos ha comunicado. \nSu caso será trasladado de inmediato a los responsables correspondientes y a los supervisores directos del empleado implicado, para revisar lo sucedido y tomar las acciones necesarias.\nNuestro compromiso es garantizar un servicio seguro, respetuoso y profesional. Se llevará a cabo la gestión interna correspondiente para esclarecer los hechos y prevenir que situaciones similares ocurran en el futuro.\nAgradecemos que nos haya informado y quedamos a su disposición para recibir cualquier información adicional que considere relevante.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting. 🚚"
+  },
+  {
+    "id": 45,
+    "categoria": "Otras Consultas",
+    "nombre": "Consulta de AE",
+    "tag": "CSOP",
+    "contenido": "Estimado XXXXXX , \n\nGracias por contactarnos.\nTras revisar su consulta, queremos informarle que el paquete al que hace referencia no forma parte de los envíos gestionados por Ecoscooting. Por este motivo, no podemos proporcionar información sobre su estado ni gestionar su entrega.\nLe recomendamos ponerse en contacto directamente con la empresa o plataforma donde realizó la compra, ya que ellos podrán proporcionarle toda la información y soporte necesario sobre su envío.\nQuedamos a su disposición para cualquier otra consulta relacionada con nuestros servicios.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting  🚚"
   },
   {
     "id": 46,
     "categoria": "Otras Consultas",
-    "subcategoria": "d.  Consulta de AE",
     "nombre": "Consulta de AE",
     "tag": "CSOP",
-    "contenido": "Estimado XXXXXX ,\níos gestionados por Ecoscooting. Por este motivo, no podemos proporcionar información sobre su estado ni gestionar su entrega.\nLe recomendamos ponerse en contacto directamente con la empresa o plataforma donde realizó la compra, ya que ellos podrán proporcionarle toda la información y soporte necesario sobre su envío.\nQuedamos a su disposición para cualquier otra consulta relacionada con nuestros servicios.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting  🚚"
+    "contenido": "Estimado XXXXXX , \n\nGracias por contactarnos.\nTras revisar su consulta, queremos informarle que el paquete al que hace referencia no forma parte de los envíos gestionados por Ecoscooting. Por este motivo, no podemos proporcionar información sobre su estado ni gestionar su entrega.\nLe recomendamos ponerse en contacto directamente con la empresa o plataforma donde realizó la compra, ya que ellos podrán proporcionarle toda la información y soporte necesario sobre su envío.\nQuedamos a su disposición para cualquier otra consulta relacionada con nuestros servicios.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting."
   },
   {
     "id": 47,
     "categoria": "Otras Consultas",
-    "subcategoria": "d.  Consulta de AE",
-    "nombre": "Consulta de AE",
-    "tag": "CSOP",
-    "contenido": "Estimado XXXXXX ,\níos gestionados por Ecoscooting. Por este motivo, no podemos proporcionar información sobre su estado ni gestionar su entrega.\nLe recomendamos ponerse en contacto directamente con la empresa o plataforma donde realizó la compra, ya que ellos podrán proporcionarle toda la información y soporte necesario sobre su envío.\nQuedamos a su disposición para cualquier otra consulta relacionada con nuestros servicios.\nAtentamente,\nEquipo de Atención al Cliente de Ecoscooting."
-  },
-  {
-    "id": 48,
-    "categoria": "Otras Consultas",
-    "subcategoria": "Solicitud de empleo",
     "nombre": "Solicitud de empleo",
     "tag": "GENERAL",
     "contenido": "Estimado XXXXXX ,\n\nGracias por tu interés en trabajar con nosotros. Para ser parte de nuestro equipo de trabajo, debes ingresar a nuestra página web www.ecoscooting.com. En la parte superior encontrarás la opción \"Conviértete en DSP\". Haz clic allí y continúa siguiendo las indicaciones para completar y enviar el formulario correspondiente.\nUna vez enviado, el área encargada se pondrá en contacto contigo.\n\nAgradecemos mucho tu colaboración y, si no es mucha molestia, te invitamos a responder la encuesta de satisfacción que recibirás próximamente. Tu opinión es muy valiosa para seguir mejorando nuestra atención. 😊\n\nEquipo de Atención al Cliente de Ecoscooting 📦"
