@@ -23,8 +23,6 @@
         .copy-btn.copied { background: #6b7280; }
         .download-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; font-weight: 600; transition: all 0.3s; display: flex; align-items: center; gap: 8px; }
         .download-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4); }
-        .download-btn.pdf { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-        .download-btn.pdf:hover { box-shadow: 0 8px 20px rgba(245, 87, 108, 0.4); }
         .search-input { border: 2px solid #e5e7eb; border-radius: 8px; padding: 12px 16px; font-size: 15px; transition: border-color 0.2s; }
         .search-input:focus { outline: none; border-color: #10b981; box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1); }
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; }
@@ -38,6 +36,7 @@
         .dropdown-content.active { display: block; }
         .dropdown-content button { display: block; width: 100%; text-align: left; padding: 10px 0; border: none; background: none; cursor: pointer; color: #1f2937; font-size: 14px; transition: color 0.2s; }
         .dropdown-content button:hover { color: #667eea; }
+        #pdfContent { position: absolute; left: -9999px; width: 210mm; }
     </style>
 </head>
 <body>
@@ -109,23 +108,7 @@
         </div>
     </div>
 
-    <!-- PDF Template (hidden) -->
-    <div id="pdfContent" style="display: none;">
-        <div style="font-family: Arial, sans-serif; max-width: 210mm; margin: 0 auto;">
-            <div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #1f2937 0%, #374151 100%); color: white; margin-bottom: 30px; page-break-after: always;">
-                <h1 style="font-size: 36px; margin: 0 0 10px 0;">📧 Plantillas Ecoscooting</h1>
-                <p style="font-size: 16px; color: #d1d5db; margin: 0;">Acceso rápido a plantillas de email profesionales</p>
-                <p style="font-size: 14px; color: #9ca3af; margin: 20px 0 0 0;">Fecha: <span id="pdfDate"></span></p>
-            </div>
-
-            <div id="pdfTableOfContents" style="margin-bottom: 40px; page-break-after: always;">
-                <h2 style="color: #1f2937; font-size: 24px; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">Tabla de Contenidos</h2>
-                <div id="tocContent"></div>
-            </div>
-
-            <div id="pdfTemplatesContent"></div>
-        </div>
-    </div>
+    <div id="pdfContent"></div>
 
     <script>
         const plantillasData = [
@@ -467,16 +450,15 @@
         document.getElementById('totalCount').textContent = plantillas.length;
 
         const colorMap = {
-            "Plazo de entrega": { hex: "#0891B2", rgb: "rgb(8, 145, 178)" },
-            "Experiencia de Servicio": { hex: "#F59E0B", rgb: "rgb(245, 158, 11)" },
-            "Solicitud del Cliente": { hex: "#10B981", rgb: "rgb(16, 185, 129)" },
-            "Escalada de insatisfacción o ri": { hex: "#8B5CF6", rgb: "rgb(139, 92, 246)" },
-            "Escalada de insatisfacción": { hex: "#8B5CF6", rgb: "rgb(139, 92, 246)" },
-            "Otras Consultas": { hex: "#6366F1", rgb: "rgb(99, 102, 241)" }
+            "Plazo de entrega": "#0891B2",
+            "Experiencia de Servicio": "#F59E0B",
+            "Solicitud del Cliente": "#10B981",
+            "Escalada de insatisfacción": "#8B5CF6",
+            "Otras Consultas": "#6366F1"
         };
 
         function getColor(cat) {
-            return colorMap[cat]?.hex || "#6B7280";
+            return colorMap[cat] || "#6B7280";
         }
 
         function toggleDownloadMenu() {
@@ -490,107 +472,101 @@
         });
 
         function downloadExcel() {
-            const wb = XLSX.utils.book_new();
+            try {
+                const wb = XLSX.utils.book_new();
 
-            // Crear un sheet por categoría
-            categories.forEach(cat => {
-                const plantillasDeCategoria = plantillas.filter(p => p.categoria === cat);
-                
-                const data = [
-                    ['Nombre', 'Tag', 'Contenido']
-                ];
+                categories.forEach(cat => {
+                    const plantillasDeCategoria = plantillas.filter(p => p.categoria === cat);
+                    
+                    const data = [['Nombre', 'Tag', 'Contenido']];
+                    plantillasDeCategoria.forEach(p => {
+                        data.push([p.nombre, p.tag, p.contenido]);
+                    });
 
-                plantillasDeCategoria.forEach(p => {
-                    data.push([p.nombre, p.tag, p.contenido]);
+                    const ws = XLSX.utils.aoa_to_sheet(data);
+                    
+                    ws['!cols'] = [{wch: 25}, {wch: 12}, {wch: 60}];
+                    ws['!rows'] = [{hpx: 30}];
+
+                    XLSX.utils.book_append_sheet(wb, ws, cat.substring(0, 31));
                 });
 
-                const ws = XLSX.utils.aoa_to_sheet(data);
-                
-                // Estilos: header con color
-                const headerColor = getColor(cat);
-                const headerStyle = {
-                    fill: { fgColor: { rgb: headerColor.replace('#', '') } },
-                    font: { bold: true, color: { rgb: "FFFFFF" } },
-                    alignment: { horizontal: "center", vertical: "center", wrapText: true }
-                };
-
-                // Aplicar estilos al header
-                for (let i = 0; i < 3; i++) {
-                    const cellRef = XLSX.utils.encode_cell({r: 0, c: i});
-                    ws[cellRef].s = headerStyle;
-                }
-
-                // Ajustar anchos
-                ws['!cols'] = [
-                    { wch: 25 },
-                    { wch: 12 },
-                    { wch: 60 }
-                ];
-
-                // Ajustar altura del header
-                ws['!rows'] = [{ hpx: 30 }];
-
-                XLSX.utils.book_append_sheet(wb, ws, cat.substring(0, 31));
-            });
-
-            XLSX.writeFile(wb, 'Plantillas_Ecoscooting.xlsx');
+                XLSX.writeFile(wb, 'Plantillas_Ecoscooting.xlsx');
+                console.log('Excel descargado correctamente');
+            } catch (error) {
+                console.error('Error al descargar Excel:', error);
+                alert('Error al descargar Excel. Intenta nuevamente.');
+            }
             document.getElementById('downloadMenu').classList.remove('active');
         }
 
         function downloadPDF() {
-            document.getElementById('pdfDate').textContent = new Date().toLocaleDateString('es-ES');
-
-            // Tabla de contenidos
-            let tocHtml = '';
-            categories.forEach((cat, idx) => {
-                const count = plantillas.filter(p => p.categoria === cat).length;
-                const color = getColor(cat);
-                tocHtml += `<div style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;">
-                    <span style="display: inline-block; width: 12px; height: 12px; background-color: ${color}; border-radius: 2px; margin-right: 10px; vertical-align: middle;"></span>
-                    <strong>${cat}</strong> <span style="color: #6b7280;">(${count} plantillas)</span>
-                </div>`;
-            });
-            document.getElementById('tocContent').innerHTML = tocHtml;
-
-            // Contenido de plantillas
-            let contentHtml = '';
-            categories.forEach(cat => {
-                const plantillasDeCategoria = plantillas.filter(p => p.categoria === cat);
-                const color = getColor(cat);
-
-                contentHtml += `<div style="page-break-before: always; margin-bottom: 30px;">
-                    <div style="border-left: 5px solid ${color}; padding-left: 20px; margin-bottom: 20px;">
-                        <h2 style="color: ${color}; font-size: 24px; margin: 0 0 5px 0;">${cat}</h2>
-                        <p style="color: #6b7280; font-size: 14px; margin: 0;">${plantillasDeCategoria.length} plantillas</p>
-                    </div>`;
-
-                plantillasDeCategoria.forEach((p, idx) => {
-                    contentHtml += `<div style="margin-bottom: 25px; border: 1px solid #e5e7eb; border-left: 4px solid ${color}; padding: 15px; background-color: #fafafa; page-break-inside: avoid;">
-                        <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: center;">
-                            <h3 style="margin: 0; color: #1f2937; font-size: 16px; font-weight: bold; flex: 1;">${p.nombre}</h3>
-                            <span style="background-color: ${color}20; color: ${color}; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">${p.tag}</span>
+            try {
+                let htmlContent = `
+                    <div style="font-family: Arial, sans-serif; padding: 20px;">
+                        <div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #1f2937 0%, #374151 100%); color: white; margin-bottom: 30px; border-radius: 8px;">
+                            <h1 style="font-size: 32px; margin: 0 0 10px 0;">📧 Plantillas Ecoscooting</h1>
+                            <p style="font-size: 16px; color: #d1d5db; margin: 0;">Acceso rápido a plantillas de email profesionales</p>
                         </div>
-                        <div style="background-color: white; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 12px; line-height: 1.6; color: #374151; white-space: pre-wrap; word-break: break-word; max-height: 200px; overflow-y: auto;">
-${p.contenido}
-                        </div>
+
+                        <h2 style="color: #1f2937; font-size: 24px; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">Tabla de Contenidos</h2>`;
+
+                categories.forEach(cat => {
+                    const count = plantillas.filter(p => p.categoria === cat).length;
+                    const color = getColor(cat);
+                    htmlContent += `<div style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;">
+                        <span style="display: inline-block; width: 12px; height: 12px; background-color: ${color}; border-radius: 2px; margin-right: 10px; vertical-align: middle;"></span>
+                        <strong>${cat}</strong> <span style="color: #6b7280;">(${count} plantillas)</span>
                     </div>`;
                 });
 
-                contentHtml += `</div>`;
-            });
+                htmlContent += `</div>`;
 
-            document.getElementById('pdfTemplatesContent').innerHTML = contentHtml;
+                categories.forEach(cat => {
+                    const plantillasDeCategoria = plantillas.filter(p => p.categoria === cat);
+                    const color = getColor(cat);
 
-            const element = document.getElementById('pdfContent');
-            const opt = {
-                margin: 10,
-                filename: 'Plantillas_Ecoscooting.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
-            };
+                    htmlContent += `<div style="margin: 40px 0; page-break-before: always;">
+                        <div style="border-left: 5px solid ${color}; padding-left: 20px; margin-bottom: 20px;">
+                            <h2 style="color: ${color}; font-size: 24px; margin: 0 0 5px 0;">${cat}</h2>
+                            <p style="color: #6b7280; font-size: 14px; margin: 0;">${plantillasDeCategoria.length} plantillas</p>
+                        </div>`;
 
-            html2pdf().set(opt).from(element).save();
+                    plantillasDeCategoria.forEach(p => {
+                        htmlContent += `<div style="margin-bottom: 20px; border: 1px solid #e5e7eb; border-left: 4px solid ${color}; padding: 15px; background-color: #fafafa; page-break-inside: avoid; border-radius: 4px;">
+                            <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: center;">
+                                <h3 style="margin: 0; color: #1f2937; font-size: 14px; font-weight: bold; flex: 1;">${p.nombre}</h3>
+                                <span style="background-color: ${color}20; color: ${color}; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 600;">${p.tag}</span>
+                            </div>
+                            <div style="background-color: white; padding: 12px; border-radius: 4px; font-family: monospace; font-size: 11px; line-height: 1.5; color: #374151; white-space: pre-wrap; word-break: break-word;">
+${p.contenido}
+                            </div>
+                        </div>`;
+                    });
+
+                    htmlContent += `</div>`;
+                });
+
+                htmlContent += `</div>`;
+
+                const element = document.createElement('div');
+                element.innerHTML = htmlContent;
+
+                const opt = {
+                    margin: [10, 10, 10, 10],
+                    filename: 'Plantillas_Ecoscooting.pdf',
+                    image: {type: 'jpeg', quality: 0.98},
+                    html2canvas: {scale: 2, useCORS: true},
+                    jsPDF: {orientation: 'portrait', unit: 'mm', format: 'a4'},
+                    pagebreak: {mode: ['avoid-all', 'css', 'legacy']}
+                };
+
+                html2pdf().set(opt).from(element).save();
+                console.log('PDF descargado correctamente');
+            } catch (error) {
+                console.error('Error al descargar PDF:', error);
+                alert('Error al descargar PDF. Intenta nuevamente.');
+            }
             document.getElementById('downloadMenu').classList.remove('active');
         }
 
