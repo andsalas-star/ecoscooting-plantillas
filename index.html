@@ -6,6 +6,8 @@
     <title>Ecoscooting - Plantillas de Email</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh; }
@@ -19,6 +21,10 @@
         .copy-btn { background: #10b981; color: white; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; transition: all 0.2s; }
         .copy-btn:hover { background: #059669; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3); }
         .copy-btn.copied { background: #6b7280; }
+        .download-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; font-weight: 600; transition: all 0.3s; display: flex; align-items: center; gap: 8px; }
+        .download-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4); }
+        .download-btn.pdf { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .download-btn.pdf:hover { box-shadow: 0 8px 20px rgba(245, 87, 108, 0.4); }
         .search-input { border: 2px solid #e5e7eb; border-radius: 8px; padding: 12px 16px; font-size: 15px; transition: border-color 0.2s; }
         .search-input:focus { outline: none; border-color: #10b981; box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1); }
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; }
@@ -27,6 +33,11 @@
         .modal-close { float: right; font-size: 24px; cursor: pointer; color: #6b7280; }
         .modal-close:hover { color: #1f2937; }
         .content-text { white-space: pre-wrap; word-wrap: break-word; }
+        .download-menu { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; background-color: white; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 12px 16px; z-index: 1; border-radius: 8px; top: 100%; right: 0; margin-top: 8px; }
+        .dropdown-content.active { display: block; }
+        .dropdown-content button { display: block; width: 100%; text-align: left; padding: 10px 0; border: none; background: none; cursor: pointer; color: #1f2937; font-size: 14px; transition: color 0.2s; }
+        .dropdown-content button:hover { color: #667eea; }
     </style>
 </head>
 <body>
@@ -37,9 +48,28 @@
                     <h1 class="text-4xl font-bold mb-2">📧 Plantillas Ecoscooting</h1>
                     <p class="text-gray-300">Acceso rápido a plantillas de email profesionales</p>
                 </div>
-                <div class="text-right">
-                    <div class="text-3xl font-bold" id="totalCount">48</div>
-                    <div class="text-sm text-gray-300">Plantillas disponibles</div>
+                <div class="flex items-center gap-4">
+                    <div class="text-right">
+                        <div class="text-3xl font-bold" id="totalCount">47</div>
+                        <div class="text-sm text-gray-300">Plantillas disponibles</div>
+                    </div>
+                    <div class="download-menu">
+                        <button class="download-btn" onclick="toggleDownloadMenu()">
+                            <i class="fas fa-download"></i> Descargar
+                        </button>
+                        <div id="downloadMenu" class="dropdown-content">
+                            <button onclick="downloadExcel()">
+                                <i class="fas fa-file-excel" style="color: #10b981; margin-right: 8px;"></i>
+                                <strong>Descargar EXCEL</strong><br>
+                                <span style="font-size: 12px; color: #6b7280;">Con sheets por categoría</span>
+                            </button>
+                            <button onclick="downloadPDF()" style="margin-top: 12px; border-top: 1px solid #e5e7eb; padding-top: 12px;">
+                                <i class="fas fa-file-pdf" style="color: #f5576c; margin-right: 8px;"></i>
+                                <strong>Descargar PDF</strong><br>
+                                <span style="font-size: 12px; color: #6b7280;">Formato profesional</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,6 +106,24 @@
             <button class="copy-btn w-full text-center" onclick="copyFromModal()">
                 <i class="fas fa-copy mr-2"></i>Copiar contenido completo
             </button>
+        </div>
+    </div>
+
+    <!-- PDF Template (hidden) -->
+    <div id="pdfContent" style="display: none;">
+        <div style="font-family: Arial, sans-serif; max-width: 210mm; margin: 0 auto;">
+            <div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #1f2937 0%, #374151 100%); color: white; margin-bottom: 30px; page-break-after: always;">
+                <h1 style="font-size: 36px; margin: 0 0 10px 0;">📧 Plantillas Ecoscooting</h1>
+                <p style="font-size: 16px; color: #d1d5db; margin: 0;">Acceso rápido a plantillas de email profesionales</p>
+                <p style="font-size: 14px; color: #9ca3af; margin: 20px 0 0 0;">Fecha: <span id="pdfDate"></span></p>
+            </div>
+
+            <div id="pdfTableOfContents" style="margin-bottom: 40px; page-break-after: always;">
+                <h2 style="color: #1f2937; font-size: 24px; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">Tabla de Contenidos</h2>
+                <div id="tocContent"></div>
+            </div>
+
+            <div id="pdfTemplatesContent"></div>
         </div>
     </div>
 
@@ -414,9 +462,137 @@
         const plantillas = plantillasData;
         let filteredPlantillas = [...plantillas];
 
-        const categories = [...new Set(plantillas.map(p => p.categoria))];
+        const categories = [...new Set(plantillas.map(p => p.categoria))].sort();
         document.getElementById('categoryFilter').innerHTML += categories.map(cat => `<option value="${cat}">${cat}</option>`).join('');
         document.getElementById('totalCount').textContent = plantillas.length;
+
+        const colorMap = {
+            "Plazo de entrega": { hex: "#0891B2", rgb: "rgb(8, 145, 178)" },
+            "Experiencia de Servicio": { hex: "#F59E0B", rgb: "rgb(245, 158, 11)" },
+            "Solicitud del Cliente": { hex: "#10B981", rgb: "rgb(16, 185, 129)" },
+            "Escalada de insatisfacción o ri": { hex: "#8B5CF6", rgb: "rgb(139, 92, 246)" },
+            "Escalada de insatisfacción": { hex: "#8B5CF6", rgb: "rgb(139, 92, 246)" },
+            "Otras Consultas": { hex: "#6366F1", rgb: "rgb(99, 102, 241)" }
+        };
+
+        function getColor(cat) {
+            return colorMap[cat]?.hex || "#6B7280";
+        }
+
+        function toggleDownloadMenu() {
+            document.getElementById('downloadMenu').classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.download-menu')) {
+                document.getElementById('downloadMenu').classList.remove('active');
+            }
+        });
+
+        function downloadExcel() {
+            const wb = XLSX.utils.book_new();
+
+            // Crear un sheet por categoría
+            categories.forEach(cat => {
+                const plantillasDeCategoria = plantillas.filter(p => p.categoria === cat);
+                
+                const data = [
+                    ['Nombre', 'Tag', 'Contenido']
+                ];
+
+                plantillasDeCategoria.forEach(p => {
+                    data.push([p.nombre, p.tag, p.contenido]);
+                });
+
+                const ws = XLSX.utils.aoa_to_sheet(data);
+                
+                // Estilos: header con color
+                const headerColor = getColor(cat);
+                const headerStyle = {
+                    fill: { fgColor: { rgb: headerColor.replace('#', '') } },
+                    font: { bold: true, color: { rgb: "FFFFFF" } },
+                    alignment: { horizontal: "center", vertical: "center", wrapText: true }
+                };
+
+                // Aplicar estilos al header
+                for (let i = 0; i < 3; i++) {
+                    const cellRef = XLSX.utils.encode_cell({r: 0, c: i});
+                    ws[cellRef].s = headerStyle;
+                }
+
+                // Ajustar anchos
+                ws['!cols'] = [
+                    { wch: 25 },
+                    { wch: 12 },
+                    { wch: 60 }
+                ];
+
+                // Ajustar altura del header
+                ws['!rows'] = [{ hpx: 30 }];
+
+                XLSX.utils.book_append_sheet(wb, ws, cat.substring(0, 31));
+            });
+
+            XLSX.writeFile(wb, 'Plantillas_Ecoscooting.xlsx');
+            document.getElementById('downloadMenu').classList.remove('active');
+        }
+
+        function downloadPDF() {
+            document.getElementById('pdfDate').textContent = new Date().toLocaleDateString('es-ES');
+
+            // Tabla de contenidos
+            let tocHtml = '';
+            categories.forEach((cat, idx) => {
+                const count = plantillas.filter(p => p.categoria === cat).length;
+                const color = getColor(cat);
+                tocHtml += `<div style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;">
+                    <span style="display: inline-block; width: 12px; height: 12px; background-color: ${color}; border-radius: 2px; margin-right: 10px; vertical-align: middle;"></span>
+                    <strong>${cat}</strong> <span style="color: #6b7280;">(${count} plantillas)</span>
+                </div>`;
+            });
+            document.getElementById('tocContent').innerHTML = tocHtml;
+
+            // Contenido de plantillas
+            let contentHtml = '';
+            categories.forEach(cat => {
+                const plantillasDeCategoria = plantillas.filter(p => p.categoria === cat);
+                const color = getColor(cat);
+
+                contentHtml += `<div style="page-break-before: always; margin-bottom: 30px;">
+                    <div style="border-left: 5px solid ${color}; padding-left: 20px; margin-bottom: 20px;">
+                        <h2 style="color: ${color}; font-size: 24px; margin: 0 0 5px 0;">${cat}</h2>
+                        <p style="color: #6b7280; font-size: 14px; margin: 0;">${plantillasDeCategoria.length} plantillas</p>
+                    </div>`;
+
+                plantillasDeCategoria.forEach((p, idx) => {
+                    contentHtml += `<div style="margin-bottom: 25px; border: 1px solid #e5e7eb; border-left: 4px solid ${color}; padding: 15px; background-color: #fafafa; page-break-inside: avoid;">
+                        <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: center;">
+                            <h3 style="margin: 0; color: #1f2937; font-size: 16px; font-weight: bold; flex: 1;">${p.nombre}</h3>
+                            <span style="background-color: ${color}20; color: ${color}; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">${p.tag}</span>
+                        </div>
+                        <div style="background-color: white; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 12px; line-height: 1.6; color: #374151; white-space: pre-wrap; word-break: break-word; max-height: 200px; overflow-y: auto;">
+${p.contenido}
+                        </div>
+                    </div>`;
+                });
+
+                contentHtml += `</div>`;
+            });
+
+            document.getElementById('pdfTemplatesContent').innerHTML = contentHtml;
+
+            const element = document.getElementById('pdfContent');
+            const opt = {
+                margin: 10,
+                filename: 'Plantillas_Ecoscooting.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+            };
+
+            html2pdf().set(opt).from(element).save();
+            document.getElementById('downloadMenu').classList.remove('active');
+        }
 
         function render() {
             const container = document.getElementById('templatesContainer');
@@ -439,7 +615,7 @@
                 <div class="card-template bg-white rounded-lg shadow p-6">
                     <h3 class="text-lg font-bold text-gray-900 mb-2">${p.nombre}</h3>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="category-badge" style="background: #${getColor(p.categoria)}22; color: #${getColor(p.categoria)}">${p.categoria}</span>
+                        <span class="category-badge" style="background: ${getColor(p.categoria)}22; color: ${getColor(p.categoria)}">${p.categoria}</span>
                         ${tagBadge}
                     </div>
                     <p class="text-gray-600 text-sm mb-4">${preview}</p>
@@ -450,11 +626,6 @@
                 </div>
             `;
             }).join('');
-        }
-
-        function getColor(cat) {
-            const colors = {"Plazo de entrega": "0891B2", "Experiencia de Servicio": "F59E0B", "Solicitud del Cliente": "10B981", "Escalada de insatisfacción": "8B5CF6", "Otras Consultas": "6366F1"};
-            return colors[cat] || "6B7280";
         }
 
         function filter() {
